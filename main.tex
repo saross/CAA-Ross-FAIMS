@@ -42,6 +42,8 @@
 \usepackage{hyperref}         % For cross-referencing
 
 
+\usepackage{enumitem} % https://tex.stackexchange.com/a/2292/5483
+
 \setbeamertemplate{footline}[frame number] 
 
 \title{Seven years of FAIMS Mobile} % Presentation title
@@ -82,59 +84,65 @@
     \end{itemize}
 \end{frame}
 
-% \begin{frame}{Perceptions of the reproducibility crisis}
-%   \begin{figure}[H]
-%     \centering
-%         \includegraphics[height=.7\textheight]{figures/reproducibility-graphic-online1.jpeg}
-%         \caption{Is there a reproducibility crisis? \cite{Baker2016-cf}}
-%         \label{fig:figure1}
-%   \end{figure}
-% \end{frame}
+\begin{frame}{Perceptions of the reproducibility crisis}
+  \begin{figure}[H]
+    \centering
+        \includegraphics[height=.7\textheight]{figures/reproducibility-graphic-online1.jpeg}
+        \caption{Is there a reproducibility crisis? \cite{Baker2016-cf}}
+        \label{fig:figure1}
+  \end{figure}
+\end{frame}
 
-% \begin{frame}{The response: improved rigour and transparency}
-%   'Trust but verify': emerging good practice:
-%     \begin{itemize}
-%         \item Findable, Accessible, Interoperable, and Reusable (FAIR) data \cite{Wilkinson2016-mr, Go-fair2017-vs}
-%         \item Transparency and Openness Promotion (TOP) guidelines \cite{Nosek2015-wm}
-%         \item Data transparency toolkit \cite{Perkel2018-rw}
-%     \end{itemize}
-% \end{frame}
+\begin{frame}{The response: improved rigour and transparency}
+  `Trust but verify': emerging good practice:
+    \begin{itemize}
+        \item Findable, Accessible, Interoperable, and Reusable (FAIR) data \cite{Wilkinson2016-mr, Go-fair2017-vs}
+        \item Transparency and Openness Promotion (TOP) guidelines \cite{Nosek2015-wm}
+        \item Data transparency toolkit \cite{Perkel2018-rw}
+    \end{itemize}
+\end{frame}
 
-% \begin{frame}{The response: from guidelines to mandates}
-%   Recent mandates for transparency or reproducibility:
-%     \begin{itemize}
-%         \item Nature: Transparency Upgrade \cite{Nature2017-lq}
-%         \item Nature: FAIR data in Earth science \cite{Nature2019-ng}
-%         \item Copernicus: FAIR data in atmospheric sciences \cite{Van_Edig2018-bu}
-%         \item Not just the natural sciences: AJPS requires data and code \cite{Jacoby2017-lw, Ajps2015-ex} 
-%         \item TOP Guidelines have 5000 signatories, including publishers representing 1000 journals (https://cos.io/our-services/top-guidelines/)
-%     \end{itemize}
-% \end{frame}
+\begin{frame}{The response: from guidelines to mandates}
+  Recent mandates for transparency or reproducibility:
+    \begin{itemize}
+        \item Nature: Transparency Upgrade \cite{Nature2017-lq}
+        \item Nature: FAIR data in Earth science \cite{Nature2019-ng}
+        \item Copernicus: FAIR data in atmospheric sciences \cite{Van_Edig2018-bu}
+        \item Not just the natural sciences: AJPS requires data and code \cite{Jacoby2017-lw, Ajps2015-ex} 
+        \item TOP Guidelines have 5000 signatories, including publishers representing 1000 journals (https://cos.io/our-services/top-guidelines/)
+    \end{itemize}
+\end{frame}
 
-% \begin{frame}{TOP Guidelines: publisher adoption}
-%   \begin{figure}[H]
-%     \centering
-%         \includegraphics[height=.7\textheight]{figures/TOP-landscape.png}
-%         \caption{The Landscape of Open Data Policies \cite{Mellor2018-bf}}
-%         \label{fig:figure1}
-%   \end{figure}
-% \end{frame}
+\begin{frame}{TOP Guidelines: publisher adoption}
+  \begin{figure}[H]
+    \centering
+        \includegraphics[height=.7\textheight]{figures/TOP-landscape.png}
+        \caption{The Landscape of Open Data Policies \cite{Mellor2018-bf}}
+        \label{fig:figure2}
+  \end{figure}
+\end{frame}
 
-% \begin{frame}{Level 2 TOP Guidelines for authors (excerpt)}
-%   %\renewcommand{\labelenumii}{\alph{enumii}}
-%     \begin{itemize}
-%         %\setcounter{enumi}{1}
-%         \item Authors using original data must:
-%             \begin{enumerate}
-%             \item make the data available at a trusted digital repository [...]
-%             \item include all variables, treatment conditions, and observations described in the manuscript.
-%             \item provide a full account of the procedures used to collect, preprocess, clean, or generate the data.
-%             \item provide program code, scripts, codebooks, and other documentation sufficient to precisely reproduce all published results.
-%             \item provide research materials and description of procedures necessary to conduct an independent replication of the research.
-%             \end{enumerate}
-%     \end{itemize}
-%     Source: https://osf.io/edtxm/
-% \end{frame}
+% https://tex.stackexchange.com/a/2292/5483
+% https://ctan.org/pkg/enumitem?lang=en
+
+\begin{frame}{Level 2 TOP Guidelines for authors (excerpt)}
+  
+    \begin{enumerate}[label=\arabic*.]
+        \setcounter{enumi}{1}
+        % This increments the enumerate counter by 1.
+        
+        \item Authors using original data must:
+        \begin{enumerate}[label=\alph*.]
+
+            \item make the data available at a trusted digital repository [...]
+            \item include all variables, treatment conditions, and observations described in the manuscript.
+            \item provide a full account of the procedures used to collect, preprocess, clean, or generate the data.
+            \item provide program code, scripts, codebooks, and other documentation sufficient to precisely reproduce all published results.
+            \item provide research materials and description of procedures necessary to conduct an independent replication of the research.
+        \end{enumerate}
+    \end{enumerate}
+    Source: https://osf.io/edtxm/
+\end{frame}
 
 % \begin{frame}{What does this mean? Are we ready?}
 %   In practice, emerging good practice - and policies from publishers and funders - mean that:
@@ -290,9 +298,9 @@
 \end{frame}
 
 
-% \begin{frame}[standout]
-% Thank you!
-% \end{frame}
+\begin{frame}[standout]
+Thank you!
+\end{frame}
 
 
 
