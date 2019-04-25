@@ -46,7 +46,7 @@
 
 %https://tex.stackexchange.com/q/333587/5483
 %TODO SHAWN REPLACE OSF URL
-\setbeamertemplate{footline}{\strut~\texttt{https://osf.io/c6m4u/}\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~}
+\setbeamertemplate{footline}{\strut~\texttt{https://osf.io/c6m4u/ | CC-BY 4.0}\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~}
 
 \title{Seven years of FAIMS Mobile} % Presentation title
 \author{Shawn A Ross}               % Presentation author
@@ -65,7 +65,7 @@
 
 % Outline
 % This page includes the outline (Table of content) of the presentation. All sections and subsections will appear in the outline by default.
-\begin{frame}{Strategies for field recording infrastructure}
+\begin{frame}{Strategies for field data capture infrastructure}
   \tableofcontents
 \end{frame}
 
@@ -96,7 +96,7 @@
 \end{frame}
 
 \begin{frame}{The response: improved rigour and transparency}
-  `Trust but verify': emerging good practice:
+  `Trust but verify'; emerging good practice:
     \begin{itemize}[label=\textbullet]
         \item Findable, Accessible, Interoperable, and Reusable (FAIR) data \cite{Wilkinson2016-mr, Go-fair2017-vs}
         \item Transparency and Openness Promotion (TOP) guidelines \cite{Nosek2015-wm}
@@ -147,7 +147,7 @@
 \end{frame}
 
 \begin{frame}{What does this mean? Are we ready?}
-  In practice, emerging good practice - and policies from publishers and funders - mean that:
+  Emerging good practice - and publisher and funder policies - mean:
     \begin{itemize}[label=\textbullet]
         \item Comprehensive, FAIR datasets will be deposited in domain-specific repositories. Data, and especially metadata, quality will be higher.
         \item Data will be captured digitally as early in research as possible, and provenance / version history maintained.
@@ -158,11 +158,33 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Beyond compliance: large-scale, synthetic research}
-  The same approaches that facilitate transparency and reproducibility support the kind of scalable research that can address archaeological 'grand challenges' \cite{Kintigh2014-ub}.
+\begin{frame}{Beyond compliance: large-scale research}
+    The same approaches that facilitate transparency and reproducibility support the kind of scalable and synthetic research that can address archaeological 'grand challenges'. \cite{Kintigh2014-ub}
+        \begin{itemize}[label=\textbullet]
+            \item Paper data capture and manual digitisation and cleaning don't scale.
+            \item Email and desktop software don't scale.
+    \end{itemize}
 \end{frame}
 
-\section{Infrastructure across the data lifecycle}
+\begin{frame}{Scalable approaches to data and analysis}
+  \begin{figure}[H]
+    \centering
+        \includegraphics[height=.7\textheight]{figures/Ocean-Health-Index.jpg}
+        \caption{Better science in less time, illustrated by the Ocean Health Index project. \cite{Stewart_Lowndes2017-lj}}
+        \label{fig:figure3}
+  \end{figure}
+\end{frame}
+
+\section{'Small data' infrastructure across the data lifecycle}
+
+\begin{frame}{'Small data' research}
+ \begin{figure}[H]
+    \centering
+        \includegraphics[height=.75\textheight]{figures/Archaeologists-standards.png}
+        \caption{Archaeologists contemplate data standards (FAIMS Stocktaking, 2012)}
+        \label{fig:figure4}
+ \end{figure}
+\end{frame}
 
 \begin{frame}{Context: the challenge of `small data'}
     `Long tail' research: most field data is small data \cite{Borgman2015-rh}
@@ -177,16 +199,34 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{The data lifecycle}
+ \begin{figure}[H]
+    \centering
+        \includegraphics[height=.75\textheight]{figures/research-data-life-diagram.png}
+        \caption{\cite{Jisc2018-gx} Image CC-BY-ND}
+        \label{fig:figure5}
+ \end{figure}
+\end{frame}
+
 \begin{frame}{Infrastructure across the data lifecycle}
     Consider the infrastructure needed to manage the three main phases of the data lifecycle
     \begin{itemize}[label=\textbullet]
-        \item Publication (easiest): domain-specific repositories.
-        \item Processing and analysis (harder): project-level code \cite{Stewart_Lowndes2017-lj} then Virtual Labs / Science Gateways.
-        \item Capture (hardest): most varied, needs to work offline under difficult conditions.
+        \item Publication (most mature): domain-specific repositories.
+        \item Processing and analysis (less mature): project-level code \cite{Stewart_Lowndes2017-lj}, then Virtual Labs / Science Gateways (e.g. \cite{Alveo2019-tk} in language analysis).
+        \item Capture (least mature): most varied, needs to work offline under difficult conditions. Commercial solutions insufficient \cite{Bureau_of_Reclamation2017-xl}.
     \end{itemize}
 \end{frame}
 
 \section{Lessons from FAIMS}
+
+\begin{frame}{FAIMS Mobile software}
+ \begin{figure}[H]
+    \centering
+        \includegraphics[height=.75\textheight]{figures/FAIMS-screenshots.png}
+        \caption{FAIMS Mobile: GIS and 'picture dictionaries'}
+        \label{fig:figure6}
+ \end{figure}
+\end{frame}
 
 \begin{frame}{Introduction to the FAIMS Project}
     \begin{itemize}[label=\textbullet]
@@ -216,6 +256,16 @@
         \item Most commercial / mass-market software does not meet research needs.
         \item Risk of lock-in, unwelcome changes to features or business models, and product discontinuation.
     \end{itemize}
+    Compare ecology in Australia: TERN, ALA, Biocollect, and associated research clouds \cite{Tern2019-sp, Ala2019-by, Ala2019-cb}.
+\end{frame}
+
+\begin{frame}{FAIMS Mobile software}
+ \begin{figure}[H]
+    \centering
+        \includegraphics[height=.75\textheight]{figures/FAIMS-generalised.png}
+        \caption{FAIMS Mobile customisations on GitHub}
+        \label{fig:figure7}
+ \end{figure}
 \end{frame}
 
 \begin{frame}{Generalised}
@@ -227,6 +277,15 @@
         \item Can deliver research-grade software affordably.  
     \end{itemize}
     FAIMS Mobile cost perhaps 3x a single bespoke application, but has been customised 50x. Customisation cost is 1/10th bespoke, and still <1/2 even if 'core' platform development costs are amortised across projects.
+\end{frame}
+
+\begin{frame}{FAIMS Mobile software}
+ \begin{figure}[H]
+    \centering
+        \includegraphics[height=.75\textheight]{figures/FAIMS-federated.png}
+        \caption{FAIMS Mobile federation}
+        \label{fig:figure8}
+ \end{figure}
 \end{frame}
 
 \begin{frame}{Modular and federated}
@@ -249,10 +308,10 @@
 \end{frame}
 
 \begin{frame}{Scope carefully}
-  Seek facts not opinions.
+  Talk to a wide range of potential users, seeking facts not opinions.
       \begin{itemize}[label=\textbullet]
         \item Don’t ask researchers what they think, ask them what they have done - what software they have adopted and why, and what problems they have expended resources to solve. 
-        \item ‘Lean startup’ methodology very useful (based around interviews with potential users).
+        \item ‘Lean startup’ methodology very useful, based around  testing of ideas through interviews with potential users \cite{Strategyzer_AG2019-uu}.
         \item In our case, we over-invested in mobile GIS and under-invested in usability (especially a GUI for customisation).
     \end{itemize}
 \end{frame}
@@ -284,10 +343,11 @@
       \begin{itemize}[label=\textbullet]
         \item Understand the evolving expectations of transparent research. 
         \item Look past desktop software (Excel, ARCGIS, Filemaker, Access, etc.).
-        \item Rally around emerging research- and domain-specific solutions (even if you are only 80\% happy with them).
+        \item Rally around emerging research- and domain-specific solutions (even if imperfect).
         \item Overcome 'not invented here'; you don't need a bespoke solution.
-        \item Budget for 'ground-up' transparency (data and code). Understand that up-front costs (in time and money) will be high but offer longer-term payoffs (in costs, time, and quality).
-        \item De-emphasise 'sharks with laser beams'; budget for fundamental good practice in data and code management before other technologies (you need it more than photogrammetry, drones, etc.).
+        \item Budget for 'ground-up' transparency (data and code). Up-front costs will be high but offer longer-term payoffs (in costs, time, and quality).
+        \item Implement (and budget for) fundamental good practice in data and code management before other technologies.
+        \item Improve research design (prioritise approach over methods) \cite{Muthukrishna2019-kt, Hole1973-cy}
     \end{itemize}
 \end{frame}
 
